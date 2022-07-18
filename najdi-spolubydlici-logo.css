@@ -1,0 +1,36 @@
+.najdi-spolubydlici-logo {
+    grid-row: 1;
+    grid-column: 1/6;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1%;
+    font-size: calc(5.5vmin - 2px);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.underline-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.15em;
+    bottom: -0.15em;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}

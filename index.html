@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Janáček</title>
+    <link rel="icon" type="image/x-icon" href="#">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="najdi-spolubydlici-logo.css">
+</head>
+<body>
+    <div id="fullpage">
+        <section id="uvod" class="section">
+            <div class="uvodni-text">
+                <h2>Zdravím!</h2>
+                <h1>Jmenuji se <i>Martin Janáček</i> a jsem začínající <i>Frontend Developer.</i></h1>
+            </div>
+            <div class="whitish-background"></div>
+            <img src="portret-yellow-pokus3.jpg" alt="portrét" class="foto">
+        </section>
+
+        <section id="technologie" class="section">
+            <h1>ZNALOSTI</h1>
+            <div class="grid-container">
+                <h3>Středně pokročilý:</h3>
+                <img src="loga/html-black.png" alt="logo HTML5"  onclick="window.open('https://cs.wikipedia.org/wiki/Hypertext_Markup_Language')">
+                <img src="loga/css-black.png" alt="logo CSS3"  onclick="window.open('https://cs.wikipedia.org/wiki/Kaskádové_styly')">
+                <img src="loga/sql-server-black.png" alt="logo SQL Serveru"  onclick="window.open('https://cs.wikipedia.org/wiki/Microsoft_SQL_Server')">
+                <h3>Mírně pokročilý:</h3>
+                <img src="loga/cs-black.png" id="cs" alt="logo C sharpu"  onclick="window.open('https://cs.wikipedia.org/wiki/C_Sharp')">
+                <h3>Začátečník:</h3>
+                <img src="loga/javascript-black.png" alt="logo Javascriptu"  onclick="window.open('https://cs.wikipedia.org/wiki/JavaScript')">
+                <img src="loga/asp-net-black.png" alt="logo ASP.NET"  onclick="window.open('https://cs.wikipedia.org/wiki/ASP.NET')">
+            </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <h1>PORTFOLIO</h1>
+            <div class="projekty">
+                <div class="projekt">
+                    <a href="#" class="najdi-spolubydlici-logo"><span class="underline-animation">Najdi <span style="color: #ffe96a">Spolubydlící</span></span></a>
+                    <p>Web, na kterém můžete nabídnout, najít případně poptat spolubydlení.</p>
+                    <p>Zatím dokončen design: <a href="#">www.najdispolubydlici.cz</a></p>
+                    <img src="github-white.png" class="logo github">
+                    <img src="najdi-spolubydlici.png" class="logo logo-projektu">
+                </div>
+
+                <div class="projekt">
+                    <a href="#" class="najdi-spolubydlici-logo"><span class="underline-animation" style="color: #ffe96a">TMJ</a>
+                    <p>Webová stránka pro Tesařství Martin Janáček. Obsahuje popis, fotogalerii a kontakt s dalšími informacemi.</p>
+                    <p>hotovy projekt:<a href="#">www.tesarstvimartinjanacek.cz</a></p>
+                    <img src="github-white.png" class="logo github">
+                    <img src="logotmj.png" class="logo logo-projektu">
+                </div>
+            </div>
+        </section>
+
+        <section id="kontakt" class="section">
+            <h1>KONTAKT</h1>
+
+            <div class="kontakt">
+                <form>
+                    <label for="jmeno">Jméno</label>
+                    <input type="text" id="jmeno" name="jmeno">
+                    
+                    <label for="email">Váš E-mail</label>
+                    <input type="email" id="lname" name="lastname">
+                    
+                    <label for="text">Váš Text</label>
+                    <textarea id="text" name="subject"></textarea>
+                    
+                    <button type="submit" class="odeslat">poslat</button>
+                </form>
+
+                <div class="info">
+                    <a href="mailto:martin.janacek@tutanota.com?"><h3><img src="email-max.png" alt="ikona mailu">martin.janacek@tutanota.com</h3></a>
+                    <a href="tel:+420-720-138-446"><h3><img src="mobil.png" alt="ikona mobilu"> (+420) 720 138 446</h3></a>
+                    <h3 onclick="window.open('janáček-životopis.pdf')"><img src="zivotopis.png" alt="ikona životopisu">Otevřít životopis</h3>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script type="text/javascript" src="fullpage.min.js"></script>
+    <script type="text/javascript">
+        new fullpage('#fullpage', {
+            licenseKey:'gplv3-license',
+            autoScrolling:true,
+            scrollHorizontally: true
+        });
+    </script>
+</body>
+</html>
