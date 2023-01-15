@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    overflow: auto;
+}
+
+section {
+    height: 100dvh;
+    width: 100%;
+}
+
+a { text-decoration: none; }
+
+#uvod {
+    background-color: black;
+    color: #ffffff;
+    margin-bottom: 1px;
+}
+
+.uvodni-text {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    max-width: 40%;
+    transform: translate(-15%, -50%);
+}
+
+.uvodni-text h2 {
+    margin: 1dvh;
+    font-size: calc(5vmin + 6px);
+    color: rgb(68, 114, 196);
+}
+
+.uvodni-text h1 {
+    margin: 1dvh;
+    font-size: calc(4vmin + 6px);
+    font-weight: 600;
+}
+
+.whitish-background {
+    width: 33%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 67%;
+    background-color: rgb(0, 0, 0);
+}
+
+.foto {
+    position: absolute;
+    top: 50%;
+    left: 67%;
+    max-width: calc(20% + 80px);
+    max-height: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#technologie {
+    /*background-color: rgb(227, 227, 227);*/
+    background-color: rgb(255, 255, 255);
+}
+
+#technologie h1 {
+    font-size: calc(4vmin + 20px);
+    text-align: center;
+    padding-top: 6vh;
+    font-weight: 900;
+}
+
+.grid-container {
+    position: absolute;
+    top: 155%;
+    left: 50%;
+    min-width: fit-content;
+    margin: 0 1vw;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 0.7fr);
+    align-items: center;
+    row-gap: 3dvh;
+    column-gap: 3vw;
+}
+
+.grid-container h3 {
+    font-size: calc(2.1vmin + 8px);
+    grid-column-start: 1;
+}
+
+
+.grid-container img {
+    cursor: pointer;
+    height: calc(9vmin + 6dvh - 16px);
+    margin: 2vmin auto;
+    transition: margin 0.25s, height 0.25s;
+}
+/*
+.grid-container img:hover {
+    height: calc(11vmin + 6vh - 16px);
+    margin: 0 auto;
+}
+*/
+.grid-container .nohover:hover {
+    height: calc(9vmin + 6dvh - 16px) !important;
+    margin: 2vmin auto !important;
+}
+
+#portfolio {
+    background-color: #ffffff;
+}
+
+#portfolio h1 {
+    font-size: calc(4vmin + 20px);
+    text-align: center;
+    padding-top: 6dvh;
+    margin-bottom: 2dvh;
+    font-weight: 900;
+}
+
+.projekty {
+    position: absolute;
+    width: 100%;
+    top: 255dvh;
+    margin: 0 auto;
+    transform: translate(-0%, -50%);
+    min-width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.projekt {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 40vw;
+    height: 60dvh;
+    display: grid;
+    grid-template-columns:repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.projekt p {
+    color: white;
+    font-size: calc(2.2vmin + 2px);
+    font-weight: 500;
+    text-align: center;
+    width: 90%;
+    margin: 1dvh auto;
+    grid-row: auto;
+    grid-column: 1/6;
+}
+
+.projekt p a {
+    text-decoration: none;
+    color: rgb(68, 114, 196);
+    display: block;
+    text-overflow:clip;
+}
+
+.projekt .logo {
+    cursor: pointer;
+    height: calc(1dvh + 4vmin);
+    width: auto;
+    grid-row: auto;
+    margin: 0 auto 1dvh auto;
+    padding: 0.5rem;
+    transition: height 0.25s;
+}
+
+.projekt .logo:hover { background-color: #000000; }
+
+.github {grid-column: 2;}
+
+.github:hover {border-radius: 50%;}
+
+.logo-projektu {grid-column: 4;}
+
+#kontakt {
+    background-color: #000000;
+}
+
+#kontakt h1 {
+    color: rgb(68, 114, 196);
+    font-size: calc(4vmin + 20px);
+    text-align: center;
+    padding-top: 6dvh;
+    font-weight: 900;
+}
+
+.kontakt {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    width: 50%;
+    margin: -3.5% 3.5% 0;
+    font-size: calc(2.5vmin + 2px);
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label {
+    color: #ffffff;
+    padding-left: 3.5%;
+}
+
+input, textarea {
+    height: 1em;
+    width: 90%;
+    font-size: calc(2.5vmin - 2px);
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.5em;
+    margin: 1.5dvh auto 5dvh;
+    margin-bottom: 5%;
+    background: none;
+    border: none;
+    border-bottom: 0.15em solid #ffffff;
+    color: #ffffff;
+}
+
+textarea {border: 0.18em solid #ffffff}
+
+input:hover, textarea:hover {
+    background-color: #252525;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    background-color: #252525;
+    border-bottom: 0.15em solid rgb(68, 114, 196);
+}
+
+textarea:focus { border: 0.18em solid rgb(68, 114, 196); }
+
+#text {
+    height: 10em;
+    max-height: 15dvh;
+    font-size: 1.5vmin;
+}
+
+.odeslat {
+    cursor: pointer;
+    height: 2em;
+    width: 5em;
+    margin: 0 auto 2dvh;
+    font-size: calc(3.5vmin - 2px);
+    font-weight: 500;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-bottom: 0.15em solid #ffffff;
+}
+
+.odeslat:hover {
+    color: #fff;
+    border-bottom: 0.15em solid rgb(68, 114, 196);
+}
+
+.info {
+    margin: 0 auto;
+    height: 80%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info h3 {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: calc(3vmin - 2px);
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+    width: 18em;
+    margin: 0 auto;
+}
+
+.info img { 
+    width: 2em;
+    padding-right: 2%;
+}
+
+.info h3:hover {
+    color:#fff;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 790px) and (min-height: 600px) {
+    .kontakt { 
+        flex-direction: column;
+    }
+    
+    form { 
+        margin: 5% auto; 
+        width: 80%;
+    }
+
+    .info {
+        width: 80%;
+        margin: 0 auto 20%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1350px) and (min-height: 650px) {
+    .projekty {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .projekt {
+        width: 75vw;
+        height: 30vh;
+    }
+
+    .projekt .logo:hover {height: 5vh; }
+}
+
+@media screen and (max-width: 700px) {
+    .uvodni-text {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        min-width: 95%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .whitish-background {display: none;}
+    
+    .foto {
+        top: 70%;
+        left: 50%;
+        max-width: calc(30% + 80px);
+    }
+
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        max-height: 70dvh;
+        column-gap: 0vw;
+    }
+
+    .grid-container h3 {
+        grid-column-end: 4;
+        margin: 0 auto;
+    }
+
+    #cs { grid-column-start: 2;}  
+}
